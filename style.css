@@ -24,10 +24,6 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-	text-decoration: underline;
-}
-
 ul {
 	list-style-type: none;
 }
@@ -76,6 +72,10 @@ ul {
 	gap: 35px;
 }
 
+.navigation-menu a:hover {
+	text-decoration: underline;
+}
+
 .navigation-menu ul li {
 	font-size: 13px;
 	text-transform: uppercase;
@@ -117,11 +117,16 @@ ul {
 	margin-bottom: 60px;
 }
 
+.post h1:hover {
+	text-decoration: none;
+	color: #b59f5b;
+}
+
 .post-image {
 	text-align: center;
 	min-width: 380px;
 	object-fit: cover;
-	background: rgba(0, 0, 0, 0.6);
+	background: #eff6f1;
 }
 
 .post-content {
@@ -141,6 +146,10 @@ ul {
 	gap: 20px;
 	list-style: none;
 	padding: 0;
+}
+
+.post-tags a:hover {
+	text-decoration: underline;
 }
 
 .post h1 {
@@ -165,7 +174,10 @@ ul {
 .post-text {
 	font-size: 15px;
 	line-height: 22px;
-	overflow: auto;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
 }
 
 .add-content {
@@ -229,6 +241,10 @@ ul {
 	color: black;
 	font-size: 14px;
 	text-transform: uppercase;
+}
+.np-post-content h3:hover {
+	text-decoration: none;
+	color: #b59f5b;
 }
 .container {
 	margin-bottom: 60px;
@@ -304,14 +320,15 @@ input:focus {
 	font-weight: bold;
 	padding: 14px 2px;
 }
+.topics-container span {
+	font-size: 12px;
+	vertical-align: super;
+	padding: 5px;
+	color: #b59f5b;
+}
 .topics-container a:hover {
 	color: #b59f5b;
 	text-decoration: none;
-}
-sup{
-	font-size: 12px;
-	padding: 5px;
-	color: #b59f5b;
 }
 .topic::after {
 	position: absolute;
